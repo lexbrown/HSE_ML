@@ -8,3 +8,12 @@ def rec(x):
         else:
             new_list.append(i)
     return new_list
+
+
+#Играемся с декораторами
+class Circle():
+    def __init__(self, y):
+        self.radius = y
+    @property #декоратор, с ним эффект меняется
+    def diameter(self):
+        return self.radius * 2
